@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>選字工具</title>
+<meta name="description" content="選字就看注音！在任何 App 選一段中文，鍵盤上面就出現注音。">
+<meta name="theme-color" content="#1d6b5b">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zhuyin.y00e.org/">
+<meta property="og:title" content="選字工具：選字就看注音">
+<meta property="og:description" content="在任何 App 選一段中文，鍵盤上面就出現注音。Android 下載。">
+<meta property="og:image" content="https://zhuyin.y00e.org/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --bg: #f6faf8; --fg: #161d1c; --muted: #4a5552; --card: #ffffff; --accent: #1d6b5b; --hi: #c6f0e9; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0e1513; --fg: #dde4e1; --muted: #a9b4b1; --card: #172120; --accent: #82d5c8; --hi: #1f4d46; }
+  }
+  :root[data-theme="dark"] { --bg: #0e1513; --fg: #dde4e1; --muted: #a9b4b1; --card: #172120; --accent: #82d5c8; --hi: #1f4d46; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.75 system-ui, -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  main { max-width: 440px; margin: 0 auto; padding: 48px 16px 40px; text-align: center; }
+  .icon { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+  h1 { font-size: 2.2rem; margin: 16px 0 0; letter-spacing: .06em; }
+  .tag { color: var(--muted); margin: 0; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 28px; padding: 14px 36px; border-radius: 999px;
+    background: #1d6b5b; color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none;
+    box-shadow: 0 6px 18px rgba(29,107,91,.35);
+  }
+  .btn svg { width: 22px; height: 22px; }
+  .small { font-size: .88rem; color: var(--muted); margin: 10px 0 0; }
+  .shot {
+    display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.05; object-fit: cover; object-position: 50% 92%;
+    border-radius: 24px; margin: 36px 0 0; box-shadow: 0 8px 28px rgba(0,0,0,.15);
+  }
+  .card { background: var(--card); border-radius: 20px; padding: 20px 22px; margin-top: 20px; text-align: left; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  .card ul { margin: 0; padding-left: 1.2em; }
+  .card p { margin: 0; color: var(--muted); }
+  .zy { background: var(--hi); border-radius: 4px; padding: 0 3px; }
+  footer { text-align: center; font-size: .85rem; color: var(--muted); padding: 8px 16px 40px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="img/icon-512.png" alt="" width="96" height="96">
+  <h1>選字工具</h1>
+  <p class="tag">選字就看注音 ✨</p>
+
+  <a class="btn" href="https://github.com/chxhua2k7/zhuyin.y00e.org/releases/download/v1.0.0/ZhuyinPick-1.0.0.apk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+    下載 APK
+  </a>
+  <p class="small">Android 手機才能用・34 MB</p>
+
+  <img class="shot" src="img/02-keyboard-bar.jpg" alt="選取「塞車」，鍵盤上面出現 ㄙㄞ ㄔㄜ" width="550" height="1100">
+
+  <div class="card">
+    <h2>它可以幹嘛</h2>
+    <ul>
+      <li>選一段中文，鍵盤上面就出現注音，點一下就換掉</li>
+      <li>破音字會列出所有讀音，像 <span class="zy">長</span> 有三個</li>
+      <li>一鍵简⇄繁，還能查國語辭典</li>
+      <li>完全離線，不連網、不看你的資料</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>怎麼裝</h2>
+    <p>下載完點開檔案，手機問要不要允許「安裝不明應用程式」就按允許。想要鍵盤上的注音，打開 App 照著說明去無障礙設定開啟就好。</p>
+  </div>
+</main>
+<footer>做的人：<a href="https://www.y00e.org/">Hoa相樺</a></footer>
+</body>
+</html>
