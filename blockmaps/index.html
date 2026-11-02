@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>方塊地圖</title>
+<meta name="description" content="Minecraft 風格的地圖和導航：方塊材質、真實氣候帶的生態域、遊戲介面。Android 下載。">
+<meta name="theme-color" content="#4c7f2a">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zhuyin.y00e.org/blockmaps/">
+<meta property="og:title" content="方塊地圖：Minecraft 風格的地圖和導航">
+<meta property="og:description" content="方塊材質、真實氣候帶的生態域、遊戲介面的地圖和導航。Android 下載。">
+<meta property="og:image" content="https://zhuyin.y00e.org/blockmaps/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --bg: #f4f7f1; --fg: #1b1f17; --muted: #4d5647; --card: #ffffff; --accent: #3f6d22; --hi: #e2efd5; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #111510; --fg: #e0e6da; --muted: #a8b2a0; --card: #1b2118; --accent: #9fd27a; --hi: #2b3a22; }
+  }
+  :root[data-theme="dark"] { --bg: #111510; --fg: #e0e6da; --muted: #a8b2a0; --card: #1b2118; --accent: #9fd27a; --hi: #2b3a22; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.75 system-ui, -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  }
+  main { max-width: 440px; margin: 0 auto; padding: 48px 16px 40px; text-align: center; }
+  .icon { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 6px 20px rgba(0,0,0,.18); image-rendering: pixelated; }
+  h1 { font-size: 2.2rem; margin: 16px 0 0; letter-spacing: .06em; }
+  .tag { color: var(--muted); margin: 0; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 28px; padding: 14px 36px; border-radius: 999px;
+    background: #4c7f2a; color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none;
+    box-shadow: 0 6px 18px rgba(76,127,42,.35);
+  }
+  .btn svg { width: 22px; height: 22px; }
+  .small { font-size: .88rem; color: var(--muted); margin: 10px 0 0; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 36px 0 0; }
+  .shots img {
+    display: block; width: 100%; height: auto; aspect-ratio: 1179 / 2556; object-fit: cover;
+    border-radius: 18px; box-shadow: 0 8px 28px rgba(0,0,0,.15);
+  }
+  .card { background: var(--card); border-radius: 20px; padding: 20px 22px; margin-top: 20px; text-align: left; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  .card ul { margin: 0; padding-left: 1.2em; }
+  .card p { margin: 0; color: var(--muted); }
+  .card p + p { margin-top: 8px; }
+  .hi { background: var(--hi); border-radius: 4px; padding: 0 3px; }
+  footer { text-align: center; font-size: .85rem; color: var(--muted); padding: 8px 16px 40px; }
+  footer p { margin: 4px 0; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="img/icon-512.png" alt="" width="96" height="96">
+  <h1>方塊地圖</h1>
+  <p class="tag">把世界變成一張 Minecraft 地圖</p>
+
+  <a class="btn" href="https://github.com/chxhua2k7/zhuyin.y00e.org/releases/download/blockmaps-v0.1.0/BlockMaps-0.1.0.apk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+    下載 APK
+  </a>
+  <p class="small">Android 10 以上・0.1.0・22 MB</p>
+
+  <div class="shots">
+    <img src="img/taipei.jpg" alt="台北 101 一帶變成石磚和木板的方塊城市，底部是物品快捷欄" width="646" height="1400">
+    <img src="img/biomes.jpg" alt="中亞到阿拉伯半島：沙漠、惡地、雪原等生態域" width="646" height="1400">
+  </div>
+
+  <div class="card">
+    <h2>它可以幹嘛</h2>
+    <ul>
+      <li>草方塊、石頭路、木板和磚塊的 3D 房子，地點變成綠寶石、麵包、金蘋果</li>
+      <li>依真實的氣候帶分成 <span class="hi">叢林</span> <span class="hi">沙漠</span> <span class="hi">雪原</span> 等 11 種生態域</li>
+      <li>搜尋地點、汽車／機車／腳踏車／步行路線，中文語音導航</li>
+      <li>螢幕關掉也繼續導航，進度顯示在通知列</li>
+      <li>走進新的生態域會解鎖「冒險時光」</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>第一次打開</h2>
+    <p>App 裡沒有附 Minecraft 的材質。第一次打開時按「下載材質」，它會從 Mojang 的官方伺服器下載目前版本的 Minecraft: Java Edition（約 40 MB），只把地圖要用的材質留在你的手機上。你需要擁有 Minecraft。</p>
+  </div>
+
+  <div class="card">
+    <h2>怎麼裝</h2>
+    <p>下載完點開檔案，手機問要不要允許「安裝不明應用程式」就按允許。打開後允許定位，導航時想在通知列看到進度，也要允許通知。</p>
+  </div>
+
+  <div class="card">
+    <h2>用到的資料</h2>
+    <p>地圖資料 © OpenStreetMap 貢獻者・圖磚 OpenFreeMap・搜尋 Photon・路線 Valhalla（FOSSGIS）・氣候 Köppen-Geiger（Kottek 等，2006）・字型 Monocraft、GNU Unifont（SIL OFL 1.1）</p>
+  </div>
+</main>
+<footer>
+  <p>非 Minecraft 官方產品，未經 Mojang 或 Microsoft 核准，也與其無關。</p>
+  <p>做的人：<a href="https://www.y00e.org/">Hoa相樺</a>・<a href="https://zhuyin.y00e.org/">選字工具</a></p>
+</footer>
+</body>
+</html>
